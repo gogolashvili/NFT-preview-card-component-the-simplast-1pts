@@ -3,22 +3,24 @@
   height: 900px;
   margin: 0 auto;
   background-color: #0d192c;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section {
   width: 350px;
   height: 596px;
   background-color: #15263f;
   border-radius: 15px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  position: relative;
 }
 .section .mainimg {
   margin-top: 24px;
   margin-left: 24px;
 }
+/* .mainimg {
+  z-index: 0;
+} */
 h1 {
   font-family: "Outfit";
   font-style: normal;
@@ -28,6 +30,10 @@ h1 {
   color: #ffffff;
   margin-top: 24px;
   margin-left: 24px;
+}
+h1:hover {
+  color: #00fff8;
+  cursor: pointer;
 }
 p {
   font-family: "Outfit";
@@ -82,7 +88,8 @@ h4 {
   font-size: 16px;
   line-height: 20px;
   color: #8bacd9;
-  margin-left: 16px;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 h5 {
   display: inline-block;
@@ -93,6 +100,11 @@ h5 {
   line-height: 20px;
   color: #ffffff;
   margin-left: 5px;
+  margin-top: 15px;
+}
+h5:hover {
+  color: #00fff8;
+  cursor: pointer;
 }
 hr {
   background-color: #2e405a;
@@ -103,4 +115,27 @@ hr {
 .lastimg {
   margin-top: 16px;
   margin-left: 24px;
+}
+.div4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.div5 {
+  position: absolute;
+  width: 302px;
+  height: 302px;
+  background-color: #00fff8;
+  top: 24px;
+  left: 24px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.div5:hover {
+  opacity: 1;
+  background-color: rgba(0, 255, 248, 0.5);
+  cursor: pointer;
 }
